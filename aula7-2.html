@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7</title>
+</head>
+
+<body>
+    <h3>Utilizando a função onchange para alterar o texto digitado pelo usuário</h3>
+    <form name="formulario" action="validar.php" onsubmit="return validarformulario()" method="post">
+        <label for="name">Nome:</label>
+        <input style="height: 30px; width: 300px;" type="text" id="nome" onInput="converter();">
+        <input style="height: 30px; width: 60px;" type="Submit" value="Enviar">
+    </form>
+    <script>
+        function validarformulario() {
+            const caixa = document.getElementById("nome");
+            if (caixa.value =="") {
+                alert("Preencha o nome!");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
