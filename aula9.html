@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 8</title>
+</head>
+
+<body>
+    <div style="background-color: rgba(14, 170, 175, 0.356); width: 200px; height: 50px;" onmouseover="mOver(this);" onmouseout="mOut(this);" onclick="mClick(this)">
+        <p style="font-size: 30px; color: white;">Passe o mouse!</p>
+    </div>
+
+    <script>
+        function mOut(obj) {
+            obj.innerHTML = "Soltou!"
+            obj.style.color = "white"
+            obj.style.fontSize = "40px"
+        }
+
+        function mOver(obj) {
+            obj.innerHTML = "Passou!"
+            obj.style.color = "blue"
+            obj.style.fontSize = "40px"
+        }
+
+        function mClick(obj) {
+            obj.innerHTML = "Clicou!"
+            obj.style.color = "green"
+            obj.style.fontSize = "40px"
+        }
+    </script>
+
+</body>
+
+</html>
